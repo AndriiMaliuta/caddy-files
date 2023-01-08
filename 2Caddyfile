@@ -1,0 +1,17 @@
+
+example1.com {
+	root * /www/example.com
+	file_server
+}
+
+example2.com {
+	reverse_proxy localhost:9000
+}
+
+:8081 {
+  respond "Hello"
+}
+
+:8082 {
+  respond "second"
+}
